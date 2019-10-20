@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="newItemPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.m3u.NewItemController">
+   <children>
+      <HBox prefHeight="10.0" prefWidth="439.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="100.0" text="Time" />
+            <TextField fx:id="txtTime" prefHeight="25.0" prefWidth="70.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="6.0" prefWidth="439.0">
+         <children>
+            <Label alignment="CENTER" prefWidth="100.0" text="ID" />
+            <TextField fx:id="txtId" prefHeight="25.0" prefWidth="70.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="68.0" prefHeight="0.0" prefWidth="439.0" />
+      <HBox layoutX="10.0" layoutY="96.0" prefHeight="0.0" prefWidth="439.0">
+         <children>
+            <Label alignment="CENTER" prefWidth="100.0" text="Name" />
+            <TextField fx:id="txtName" prefHeight="25.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="40.0" prefHeight="0.0" prefWidth="439.0">
+         <children>
+            <Label alignment="CENTER" prefWidth="100.0" text="Logo" />
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="txtLogo" prefHeight="25.0" prefWidth="330.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="124.0" prefHeight="0.0" prefWidth="439.0">
+         <children>
+            <Label alignment="CENTER" prefWidth="100.0" text="URL" />
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="txtUrl" prefHeight="25.0" prefWidth="330.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="76.0" prefWidth="397.0">
+         <children>
+            <Button fx:id="btnAdd" layoutX="380.0" layoutY="25.0" mnemonicParsing="false" onAction="#closeWindow" text="Add" />
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</VBox>
